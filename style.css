@@ -1,0 +1,36 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:wght@600&display=swap');
+body{
+    font-family: poppins;
+}
+
+/* Keyframe animation for wrong answer */
+@keyframes wrongAnswerAnimation {
+    0%, 100% { 
+        background-color: #ffcccc;
+        color: #ff0000;
+        border: 1px solid #ff0000;
+        transform: translateX(0);
+    }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-2px); }
+}
+
+/* Keyframe animation for correct answer */
+@keyframes correctAnswerAnimation {
+    0%, 100% { 
+        background-color: #ccffcc;
+        color: #008000;
+        border: 1px solid #008000;
+        transform: scale(1);
+    }
+    50% { transform: scale(1.2); }
+}
+
+.container{
+  transition-duration: 0.4s;
+}

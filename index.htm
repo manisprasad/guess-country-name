@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Country Game</title>
+</head>
+<body class="bg-slate-800 h-screen flex items-center justify-center">
+
+    <div class=" container bg-slate-700 text-white p-8 rounded shadow-md max-w-md w-full">
+        <!-- Question -->
+        <h2 class="text-2xl font-bold mb-4 text-center">Guess the Country Name!</h2>
+
+        <!-- Flag Image -->
+        <img src="https://cdn.dribbble.com/users/255512/screenshots/2215917/animation.gif" alt="CCountry flag" id="flag-img" class="mb-4 rounded border-2 border-green-500 h-52 m-auto">
+
+        <!-- Options -->
+        <div class="option-div grid grid-cols-2 gap-4">
+          
+           
+        </div>
+        
+        
+    </div>
+
+    <div class="loader-container hidden text-center mt-6 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div class="loader border-t-8 border-blue-500 border-solid rounded-full w-16 h-16 animate-spin"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
